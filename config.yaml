@@ -1,0 +1,9 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URLS}
+  instance:
+    preferIpAddress: true
+    metadata-map:
+      version: ${app.version}
+      jvm.version: ${java.version}
